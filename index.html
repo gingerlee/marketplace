@@ -6,62 +6,64 @@
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title>Survey</title>
+    <title>The Jewelry Store</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
         <h1>The Jewelry Store</h1>
       </div>
-      <div class="checkout">
-        <h2>Shopping Cart Checkout</h2>
-        <form id="form">
-        <div class="form-group">
-          <label for="firstname">First Name</label>
-          <input type="text" class="form-control" id="firstname" placeholder="Enter First Name">
+      <div class="card" style="width: 30rem;">
+        <div class="checkout">
+          <h2 class="card-title">Shopping Cart Checkout</h2>
+          <hr>
+          <form id="form">
+            <div class="form-group">
+              <label for="firstname">First Name</label>
+              <input type="text" class="form-control" id="firstname" placeholder="Enter First Name">
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name</label>
+              <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
+            </div>
+            <div class="form-group">
+              <label for="streetaddress">Street Address</label>
+              <input type="text" class="form-control" id="streetaddress" placeholder="Street Address">
+            </div>
+            <div class="form-group">
+              <label for="aptnumber">Apt./Ste./P.O. Box</label>
+              <input type="text" class="form-control" id="aptnumber" placeholder="Apt./Ste./P.O. Box">
+            </div>
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" class="form-control" id="city" placeholder="Enter City">
+            </div>
+            <div class="form-group">
+              <label for="state">State</label>
+              <input type="text" class="form-control" id="state" placeholder="Enter State">
+            </div>
+            <div class="form-group">
+              <label for="zip">Zip Code</label>
+              <input type="text" class="form-control" id="zip" placeholder="Enter Zip Code">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="lastname">Last Name</label>
-          <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
-        </div>
-        <div class="form-group">
-          <label for="streetaddress">Street Address</label>
-          <input type="text" class="form-control" id="streetaddress" placeholder="Street Address">
-        </div>
-        <div class="form-group">
-          <label for="aptnumber">Apt./Ste./P.O. Box</label>
-          <input type="text" class="form-control" id="aptnumber" placeholder="Apt./Ste./P.O. Box">
-        </div>
-        <div class="form-group">
-          <label for="city">City</label>
-          <input type="text" class="form-control" id="city" placeholder="Enter City">
-        </div>
-        <div class="form-group">
-          <label for="state">State</label>
-          <input type="text" class="form-control" id="state" placeholder="Enter State">
-        </div>
-        <div class="form-group">
-          <label for="zip">Zip Code</label>
-          <input type="text" class="form-control" id="zip" placeholder="Enter Zip Code">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
       </div>
       <div class="confirmation">
         <h2>Success!</h2>
         <h5>Here is your order confirmation:</h5>
         <p><strong>Confrimation number:</strong> 00302991</p>
         <p><u>Order Details:</u></p>
-        <img src="" alt="Jewelry">
+        <img src="img/necklace.jpg" alt="Jewelry" height="250px">
         <p><strong>Item: </strong> 1 Halter Necklace</p>
         <p><u>Shipping Address:</u></p>
-        <p><span class="firstname"></span></p>
-        <p><span class="lastname"></span></p>
-        <p><span class="streetaddress"></span></p>
-        <p><span class="aptnumber"></span></p>
-        <p><span class="city"></span></p>
-        <p><span class="state"></span></p>
-        <p><span class="zip"></span></p>
+        <p class="mb-0"><span class="firstname"></span> <span class="lastname"></span></p>
+        <p class="mb-0"><span class="streetaddress"></span></p>
+        <p class="mb-0"><span class="aptnumber"></span></p>
+        <p class="mb-0"><span class="city"></span></p>
+        <p class="mb-0"><span class="state"></span></p>
+        <p class="mb-0"><span class="zip"></span></p>
       </div>
     </div>
   </body>

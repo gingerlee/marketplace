@@ -9,6 +9,16 @@ $(function() {
     var inputState = $("input#state").val();
     var inputZip = $("input#zip").val();
 
-    
+    $(".firstname").text(inputFirstName);
+    $(".lastname").text(inputLastName);
+    $(".streetaddress").text(inputStreetAddress);
+    $(".aptnumber").text(inputAptNumber);
+    $(".city").text(inputCity);
+    $(".state").text(inputState);
+    $(".zip").text(inputZip);
+
+    $(".checkout").hide();
+    $(".confirmation").show();
+
   })
 });
